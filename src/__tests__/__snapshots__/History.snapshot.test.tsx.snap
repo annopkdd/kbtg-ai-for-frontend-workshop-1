@@ -1,0 +1,2076 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`History Page Snapshot Tests History page loaded with transactions should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-3"
+      >
+        <a
+          class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+          data-discover="true"
+          href="/home"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <div>
+          <h1
+            class="text-xl font-semibold"
+          >
+            ประวัติการทำธุรกรรม
+          </h1>
+          <p
+            class="text-web-green-100 text-sm"
+          >
+            3
+             รายการ
+          </p>
+        </div>
+      </div>
+      <button
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="mt-4"
+    >
+      <div
+        class="relative"
+      >
+        <input
+          class="w-full px-4 py-3 pl-10 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30"
+          placeholder="ค้นหาตามชื่อ, PayTag, หรือหมายเหตุ..."
+          type="text"
+          value=""
+        />
+        <svg
+          class="absolute left-3 top-3.5 w-4 h-4 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="grid grid-cols-2 gap-4 mb-6"
+      >
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินเข้า
+              </p>
+              <p
+                class="text-xl font-bold text-green-600"
+              >
+                ฿
+                1,200
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินออก
+              </p>
+              <p
+                class="text-xl font-bold text-red-600"
+              >
+                ฿
+                500
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 11l5-5m0 0l5 5m-5-5v12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="divide-y divide-neutral-200"
+        >
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5H21"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @somchai123
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าอาหารเที่ยง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      วันนี้ 14:30
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  500
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-green-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a2 2 0 002 2h2a2 2 0 002-2v-4M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @nida456
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    คืนเงินค่าหนัง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      เมื่อวาน 19:45
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-green-600"
+                >
+                  +
+                  ฿
+                  1,200
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @prayuth789
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าเช่าบ้าน
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-yellow-600"
+                    >
+                      รอดำเนินการ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      2 วันที่แล้ว
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  2,500
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History Page Snapshot Tests History page loading state should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-3"
+      >
+        <a
+          class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+          data-discover="true"
+          href="/home"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <div>
+          <h1
+            class="text-xl font-semibold"
+          >
+            ประวัติการทำธุรกรรม
+          </h1>
+          <p
+            class="text-web-green-100 text-sm"
+          >
+            0
+             รายการ
+          </p>
+        </div>
+      </div>
+      <button
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="mt-4"
+    >
+      <div
+        class="relative"
+      >
+        <input
+          class="w-full px-4 py-3 pl-10 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30"
+          placeholder="ค้นหาตามชื่อ, PayTag, หรือหมายเหตุ..."
+          type="text"
+          value=""
+        />
+        <svg
+          class="absolute left-3 top-3.5 w-4 h-4 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="flex items-center justify-center p-8"
+    >
+      <svg
+        class="animate-spin h-8 w-8 text-web-green-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        />
+        <path
+          class="opacity-75"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History Page Snapshot Tests History page with filters panel open should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-3"
+      >
+        <a
+          class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+          data-discover="true"
+          href="/home"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <div>
+          <h1
+            class="text-xl font-semibold"
+          >
+            ประวัติการทำธุรกรรม
+          </h1>
+          <p
+            class="text-web-green-100 text-sm"
+          >
+            3
+             รายการ
+          </p>
+        </div>
+      </div>
+      <button
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="mt-4"
+    >
+      <div
+        class="relative"
+      >
+        <input
+          class="w-full px-4 py-3 pl-10 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30"
+          placeholder="ค้นหาตามชื่อ, PayTag, หรือหมายเหตุ..."
+          type="text"
+          value=""
+        />
+        <svg
+          class="absolute left-3 top-3.5 w-4 h-4 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="grid grid-cols-2 gap-4 mb-6"
+      >
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินเข้า
+              </p>
+              <p
+                class="text-xl font-bold text-green-600"
+              >
+                ฿
+                1,200
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินออก
+              </p>
+              <p
+                class="text-xl font-bold text-red-600"
+              >
+                ฿
+                500
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 11l5-5m0 0l5 5m-5-5v12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="divide-y divide-neutral-200"
+        >
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5H21"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @somchai123
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าอาหารเที่ยง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      วันนี้ 14:30
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  500
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-green-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a2 2 0 002 2h2a2 2 0 002-2v-4M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @nida456
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    คืนเงินค่าหนัง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      เมื่อวาน 19:45
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-green-600"
+                >
+                  +
+                  ฿
+                  1,200
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @prayuth789
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าเช่าบ้าน
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-yellow-600"
+                    >
+                      รอดำเนินการ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      2 วันที่แล้ว
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  2,500
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History Page Snapshot Tests History page with no transactions should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-3"
+      >
+        <a
+          class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+          data-discover="true"
+          href="/home"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <div>
+          <h1
+            class="text-xl font-semibold"
+          >
+            ประวัติการทำธุรกรรม
+          </h1>
+          <p
+            class="text-web-green-100 text-sm"
+          >
+            3
+             รายการ
+          </p>
+        </div>
+      </div>
+      <button
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="mt-4"
+    >
+      <div
+        class="relative"
+      >
+        <input
+          class="w-full px-4 py-3 pl-10 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30"
+          placeholder="ค้นหาตามชื่อ, PayTag, หรือหมายเหตุ..."
+          type="text"
+          value=""
+        />
+        <svg
+          class="absolute left-3 top-3.5 w-4 h-4 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="grid grid-cols-2 gap-4 mb-6"
+      >
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินเข้า
+              </p>
+              <p
+                class="text-xl font-bold text-green-600"
+              >
+                ฿
+                1,200
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินออก
+              </p>
+              <p
+                class="text-xl font-bold text-red-600"
+              >
+                ฿
+                500
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 11l5-5m0 0l5 5m-5-5v12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="divide-y divide-neutral-200"
+        >
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5H21"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @somchai123
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าอาหารเที่ยง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      วันนี้ 14:30
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  500
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-green-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a2 2 0 002 2h2a2 2 0 002-2v-4M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @nida456
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    คืนเงินค่าหนัง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      เมื่อวาน 19:45
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-green-600"
+                >
+                  +
+                  ฿
+                  1,200
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @prayuth789
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าเช่าบ้าน
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-yellow-600"
+                    >
+                      รอดำเนินการ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      2 วันที่แล้ว
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  2,500
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History Page Snapshot Tests History page with search query should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <div
+        class="flex items-center space-x-3"
+      >
+        <a
+          class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+          data-discover="true"
+          href="/home"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <div>
+          <h1
+            class="text-xl font-semibold"
+          >
+            ประวัติการทำธุรกรรม
+          </h1>
+          <p
+            class="text-web-green-100 text-sm"
+          >
+            3
+             รายการ
+          </p>
+        </div>
+      </div>
+      <button
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="mt-4"
+    >
+      <div
+        class="relative"
+      >
+        <input
+          class="w-full px-4 py-3 pl-10 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30"
+          placeholder="ค้นหาตามชื่อ, PayTag, หรือหมายเหตุ..."
+          type="text"
+          value=""
+        />
+        <svg
+          class="absolute left-3 top-3.5 w-4 h-4 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="grid grid-cols-2 gap-4 mb-6"
+      >
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินเข้า
+              </p>
+              <p
+                class="text-xl font-bold text-green-600"
+              >
+                ฿
+                1,200
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white border border-neutral-200 rounded-lg p-4"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <div>
+              <p
+                class="text-sm text-neutral-600"
+              >
+                เงินออก
+              </p>
+              <p
+                class="text-xl font-bold text-red-600"
+              >
+                ฿
+                500
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 11l5-5m0 0l5 5m-5-5v12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="divide-y divide-neutral-200"
+        >
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5H21"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @somchai123
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าอาหารเที่ยง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      วันนี้ 14:30
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  500
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-green-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a2 2 0 002 2h2a2 2 0 002-2v-4M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @nida456
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    คืนเงินค่าหนัง
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-green-600"
+                    >
+                      สำเร็จ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      เมื่อวาน 19:45
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-green-600"
+                >
+                  +
+                  ฿
+                  1,200
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 hover:bg-neutral-50 cursor-pointer transition-colors"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <div
+                class="flex items-center space-x-3"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100"
+                >
+                  <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 11l5-5m0 0l5 5m-5-5v12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex-1 min-w-0"
+                >
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <div
+                      class="text-neutral-400"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm text-neutral-600 truncate"
+                  >
+                    @prayuth789
+                  </p>
+                  <p
+                    class="text-xs text-neutral-500 truncate"
+                  >
+                    ค่าเช่าบ้าน
+                  </p>
+                  <div
+                    class="flex items-center space-x-2 mt-1"
+                  >
+                    <span
+                      class="text-xs font-medium text-yellow-600"
+                    >
+                      รอดำเนินการ
+                    </span>
+                    <span
+                      class="text-xs text-neutral-400"
+                    >
+                      •
+                    </span>
+                    <span
+                      class="text-xs text-neutral-500"
+                    >
+                      2 วันที่แล้ว
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-right"
+              >
+                <p
+                  class="font-bold text-lg text-red-600"
+                >
+                  -
+                  ฿
+                  2,500
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

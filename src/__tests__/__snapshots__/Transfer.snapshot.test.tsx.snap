@@ -1,0 +1,865 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Transfer Page Error States Transfer page with validation errors should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center space-x-3"
+    >
+      <a
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+        data-discover="true"
+        href="/home"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15 19l-7-7 7-7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+      <div>
+        <h1
+          class="text-xl font-semibold"
+        >
+          โอนเงิน
+        </h1>
+        <p
+          class="text-web-green-100 text-sm"
+        >
+          PayWise Transfer
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-6 flex items-center justify-center space-x-4"
+    >
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-white text-web-green-600"
+        >
+          1
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          2
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="p-4 border-b border-neutral-200"
+        >
+          <h2
+            class="text-lg font-semibold text-neutral-900"
+          >
+            เลือกผู้รับ
+          </h2>
+        </div>
+        <div
+          class="p-4 space-y-4"
+        >
+          <div>
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-2"
+            >
+              PayTag หรือเบอร์โทร
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-web-green-500 focus:border-transparent"
+                placeholder="@username หรือ 0812345678"
+                type="text"
+                value=""
+              />
+              <button
+                class="absolute right-2 top-2 p-2 text-neutral-500 hover:text-web-green-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-sm font-medium text-neutral-700 mb-3"
+            >
+              ผู้รับล่าสุด
+            </h3>
+            <div
+              class="grid grid-cols-2 gap-3"
+            >
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ส
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @somchai123
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      น
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @nida456
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ป
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @prayuth789
+                    </p>
+                  </div>
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ม
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      มาลี ใจงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @malee999
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button
+            class="w-full bg-web-green-600 hover:bg-web-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+          >
+            ถัดไป
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Transfer Page Snapshot Tests Transfer page QR scanner modal should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center space-x-3"
+    >
+      <a
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+        data-discover="true"
+        href="/home"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15 19l-7-7 7-7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+      <div>
+        <h1
+          class="text-xl font-semibold"
+        >
+          โอนเงิน
+        </h1>
+        <p
+          class="text-web-green-100 text-sm"
+        >
+          PayWise Transfer
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-6 flex items-center justify-center space-x-4"
+    >
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-white text-web-green-600"
+        >
+          1
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          2
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="p-4 border-b border-neutral-200"
+        >
+          <h2
+            class="text-lg font-semibold text-neutral-900"
+          >
+            เลือกผู้รับ
+          </h2>
+        </div>
+        <div
+          class="p-4 space-y-4"
+        >
+          <div>
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-2"
+            >
+              PayTag หรือเบอร์โทร
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-web-green-500 focus:border-transparent"
+                placeholder="@username หรือ 0812345678"
+                type="text"
+                value=""
+              />
+              <button
+                class="absolute right-2 top-2 p-2 text-neutral-500 hover:text-web-green-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-sm font-medium text-neutral-700 mb-3"
+            >
+              ผู้รับล่าสุด
+            </h3>
+            <div
+              class="grid grid-cols-2 gap-3"
+            >
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ส
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @somchai123
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      น
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @nida456
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ป
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @prayuth789
+                    </p>
+                  </div>
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ม
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      มาลี ใจงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @malee999
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button
+            class="w-full bg-web-green-600 hover:bg-web-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+          >
+            ถัดไป
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Transfer Page Snapshot Tests Transfer page initial state (recipient step) should match snapshot 1`] = `
+<div
+  class="min-h-screen bg-neutral-50"
+>
+  <div
+    class="bg-gradient-to-r from-web-green-600 to-web-green-500 text-white p-4"
+  >
+    <div
+      class="flex items-center space-x-3"
+    >
+      <a
+        class="p-2 hover:bg-white/20 rounded-lg transition-colors"
+        data-discover="true"
+        href="/home"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15 19l-7-7 7-7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+      <div>
+        <h1
+          class="text-xl font-semibold"
+        >
+          โอนเงิน
+        </h1>
+        <p
+          class="text-web-green-100 text-sm"
+        >
+          PayWise Transfer
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-6 flex items-center justify-center space-x-4"
+    >
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-white text-web-green-600"
+        >
+          1
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          2
+        </div>
+        <div
+          class="w-8 h-0.5 mx-2 bg-web-green-700"
+        />
+      </div>
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold bg-web-green-700 text-web-green-200"
+        >
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-4"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div
+        class="bg-white border border-neutral-200 rounded-lg shadow"
+      >
+        <div
+          class="p-4 border-b border-neutral-200"
+        >
+          <h2
+            class="text-lg font-semibold text-neutral-900"
+          >
+            เลือกผู้รับ
+          </h2>
+        </div>
+        <div
+          class="p-4 space-y-4"
+        >
+          <div>
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-2"
+            >
+              PayTag หรือเบอร์โทร
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-web-green-500 focus:border-transparent"
+                placeholder="@username หรือ 0812345678"
+                type="text"
+                value=""
+              />
+              <button
+                class="absolute right-2 top-2 p-2 text-neutral-500 hover:text-web-green-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-sm font-medium text-neutral-700 mb-3"
+            >
+              ผู้รับล่าสุด
+            </h3>
+            <div
+              class="grid grid-cols-2 gap-3"
+            >
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ส
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      สมชาย ใจดี
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @somchai123
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      น
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      นิดา สวยงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @nida456
+                    </p>
+                  </div>
+                  <div
+                    class="w-2 h-2 bg-web-green-500 rounded-full"
+                  />
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ป
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      ประยุทธ์ มั่นคง
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @prayuth789
+                    </p>
+                  </div>
+                </div>
+              </button>
+              <button
+                class="p-3 rounded-lg border-2 transition-all text-left border-neutral-200 hover:border-web-green-300"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <div
+                    class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span
+                      class="text-white font-semibold text-sm"
+                    >
+                      ม
+                    </span>
+                  </div>
+                  <div
+                    class="flex-1 min-w-0"
+                  >
+                    <p
+                      class="font-medium text-neutral-900 truncate"
+                    >
+                      มาลี ใจงาม
+                    </p>
+                    <p
+                      class="text-sm text-neutral-600 truncate"
+                    >
+                      @malee999
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button
+            class="w-full bg-web-green-600 hover:bg-web-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+          >
+            ถัดไป
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
