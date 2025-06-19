@@ -1,13 +1,6 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import Transfer from '../pages/Transfer';
-
-// Mock data for consistent snapshots
-const mockContacts = [
-  { id: '1', name: 'สมชาย ใจดี', payTag: '@somchai123', isFrequent: true },
-  { id: '2', name: 'นิดา สวยงาม', payTag: '@nida456', isFrequent: true }
-];
 
 describe('Transfer Page Snapshot Tests', () => {
   beforeEach(() => {
@@ -19,7 +12,7 @@ describe('Transfer Page Snapshot Tests', () => {
     jest.useRealTimers();
   });
 
-  test('Transfer page initial state (recipient step) should match snapshot', () => {
+  test('Transfer page initial state should match snapshot', () => {
     const { container } = render(
       <MemoryRouter>
         <Transfer />
@@ -28,37 +21,35 @@ describe('Transfer Page Snapshot Tests', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  test('Transfer page QR scanner modal should match snapshot', async () => {
-    const { container, getByText } = render(
+  test('Transfer page with QR scanner should match snapshot', () => {
+    const { container } = render(
       <MemoryRouter>
         <Transfer />
       </MemoryRouter>
     );
     
-    // Click QR scanner button to open modal
-    const qrButton = container.querySelector('button[aria-label="QR Scanner"]') || 
-                    container.querySelector('svg[viewBox="0 0 24 24"]')?.closest('button');
+    // Click QR button to show scanner
+    const qrButton = container.querySelector('button[aria-label="QR Scanner"]') ||
+                    container.querySelector('svg')?.closest('button');
     
     if (qrButton) {
-      qrButton.click();
+      (qrButton as HTMLElement).click();
     }
     
     expect(container.firstChild).toMatchSnapshot();
   });
-});
 
-describe('Transfer Page Error States', () => {
-  test('Transfer page with validation errors should match snapshot', () => {
+  test('Transfer page amount step should match snapshot', () => {
     const { container } = render(
       <MemoryRouter>
         <Transfer />
       </MemoryRouter>
     );
     
-    // Simulate validation error state
+    // Navigate to amount step
     const nextButton = container.querySelector('button[type="button"]');
-    if (nextButton) {
-      nextButton.click();
+    if (nextButton && nextButton.textContent?.includes('ถัดไป')) {
+      (nextButton as HTMLElement).click();
     }
     
     expect(container.firstChild).toMatchSnapshot();

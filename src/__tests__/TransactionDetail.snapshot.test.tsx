@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import TransactionDetail from '../pages/TransactionDetail';
@@ -123,7 +122,7 @@ describe('TransactionDetail Page Snapshot Tests', () => {
     // Click show receipt button
     const receiptButton = container.querySelector('button[type="button"]');
     if (receiptButton && receiptButton.textContent?.includes('แสดงใบเสร็จ')) {
-      receiptButton.click();
+      (receiptButton as HTMLElement).click();
     }
     
     expect(container.firstChild).toMatchSnapshot();

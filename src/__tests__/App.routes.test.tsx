@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router';
 import Root from '../pages/Root';

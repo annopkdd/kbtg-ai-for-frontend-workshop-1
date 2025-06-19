@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import History from '../pages/History';
@@ -99,7 +98,7 @@ describe('History Page Snapshot Tests', () => {
                         container.querySelector('svg[viewBox="0 0 24 24"]')?.closest('button');
     
     if (filterButton) {
-      filterButton.click();
+      (filterButton as HTMLElement).click();
     }
     
     expect(container.firstChild).toMatchSnapshot();
@@ -120,7 +119,7 @@ describe('History Page Snapshot Tests', () => {
     // Add search query
     const searchInput = container.querySelector('input[placeholder*="ค้นหา"]');
     if (searchInput) {
-      searchInput.value = 'สมชาย';
+      (searchInput as HTMLInputElement).value = 'สมชาย';
     }
     
     expect(container.firstChild).toMatchSnapshot();

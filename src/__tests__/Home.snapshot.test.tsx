@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import Home from '../pages/Home';
@@ -79,7 +78,7 @@ describe('Home Page Snapshot Tests', () => {
                      container.querySelector('svg')?.closest('button');
     
     if (eyeButton) {
-      eyeButton.click();
+      (eyeButton as HTMLElement).click();
     }
     
     expect(container.firstChild).toMatchSnapshot();
@@ -91,10 +90,6 @@ describe('Home Page Snapshot Tests', () => {
         <Home />
       </MemoryRouter>
     );
-    
-    // Verify recent transactions are displayed
-    const transactionSection = container.querySelector('[class*="recent"]') ||
-                              container.querySelector('h2');
     
     expect(container.firstChild).toMatchSnapshot();
   });

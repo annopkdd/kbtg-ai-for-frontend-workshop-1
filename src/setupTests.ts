@@ -1,9 +1,4 @@
 import '@testing-library/jest-dom';
-import { TextEncoder, TextDecoder } from 'util';
-
-// Polyfill for TextEncoder/TextDecoder required by react-router
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
 
 // Mock window.matchMedia
 Object.defineProperty(window, 'matchMedia', {
@@ -21,18 +16,11 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 // Mock IntersectionObserver
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
-  observe() {
-    return null;
-  }
-  disconnect() {
-    return null;
-  }
-  unobserve() {
-    return null;
-  }
-};
+global.IntersectionObserver = jest.fn().mockImplementation(() => ({
+  observe: jest.fn(),
+  disconnect: jest.fn(),
+  unobserve: jest.fn(),
+}));
 
 // Mock fetch for any API calls
 global.fetch = jest.fn(() =>
