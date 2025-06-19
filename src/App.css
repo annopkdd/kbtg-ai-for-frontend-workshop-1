@@ -1,0 +1,13 @@
+/* App.css - cleaned for TailwindCSS v4 compatibility */
+
+.App {
+  @apply text-center p-8;
+}
+
+.App h1 {
+  @apply text-3xl mb-4;
+}
+
+.App p {
+  @apply text-xl;
+}
