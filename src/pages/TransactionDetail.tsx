@@ -1,73 +1,10 @@
 import { Link, useParams } from "react-router";
 import { useState } from "react";
+import { Transaction, getAllTransactions } from "../data/transactions";
 
-interface Transaction {
-  id: string;
-  type: "incoming" | "outgoing";
-  recipient?: string;
-  sender?: string;
-  payTag: string;
-  amount: number;
-  memo?: string;
-  date: string;
-  status: "completed" | "pending" | "failed";
-  referenceId: string;
-  fee?: number;
-  accountNumber?: string;
-  bankName?: string;
-  timestamp: string;
-}
-
-// Mock transaction data - in a real app, this would come from an API
+// Get transaction by ID from shared data source
 const getTransactionById = (id: string): Transaction | null => {
-  const transactions: Transaction[] = [
-    {
-      id: "TXN001",
-      type: "outgoing",
-      recipient: "สมชาย ใจดี",
-      payTag: "@somchai123",
-      amount: 500,
-      memo: "ค่าอาหารเที่ยง",
-      date: "วันนี้ 14:30",
-      status: "completed",
-      referenceId: "REF2025061901001",
-      fee: 0,
-      accountNumber: "123-4-56789-0",
-      bankName: "ธนาคารกรุงเทพ",
-      timestamp: "19 มิ.ย. 2568 เวลา 14:30:25",
-    },
-    {
-      id: "TXN002",
-      type: "incoming",
-      sender: "นิดา สวยงาม",
-      payTag: "@nida456",
-      amount: 1200,
-      memo: "คืนเงินค่าหนัง",
-      date: "เมื่อวาน 19:45",
-      status: "completed",
-      referenceId: "REF2025061801002",
-      fee: 0,
-      accountNumber: "987-6-54321-0",
-      bankName: "ธนาคารไทยพาณิชย์",
-      timestamp: "18 มิ.ย. 2568 เวลา 19:45:12",
-    },
-    {
-      id: "TXN003",
-      type: "outgoing",
-      recipient: "ประยุทธ์ มั่นคง",
-      payTag: "@prayuth789",
-      amount: 2500,
-      memo: "ค่าเช่าบ้าน",
-      date: "2 วันที่แล้ว",
-      status: "completed",
-      referenceId: "REF2025061701003",
-      fee: 5,
-      accountNumber: "456-7-89012-3",
-      bankName: "ธนาคารกสิกรไทย",
-      timestamp: "17 มิ.ย. 2568 เวลา 10:15:30",
-    },
-  ];
-
+  const transactions = getAllTransactions();
   return transactions.find((t) => t.id === id) || null;
 };
 
@@ -241,14 +178,21 @@ export default function TransactionDetail() {
             <div className="flex justify-between">
               <span className="text-neutral-600">หมายเลขอ้างอิง</span>
               <span className="text-neutral-900 font-medium">
-                {transaction.referenceId}
+                {transaction.reference}
               </span>
             </div>
 
             <div className="flex justify-between">
               <span className="text-neutral-600">วันที่และเวลา</span>
               <span className="text-neutral-900 font-medium">
-                {transaction.timestamp}
+                {transaction.timestamp.toLocaleString('th-TH', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  second: '2-digit'
+                })}
               </span>
             </div>
 
@@ -268,11 +212,23 @@ export default function TransactionDetail() {
               </span>
             </div>
 
-            {transaction.fee && transaction.fee > 0 && (
+            <div className="flex justify-between">
+              <span className="text-neutral-600">ค่าธรรมเนียม</span>
+              <span className="font-medium text-green-600">
+                ฟรี
+              </span>
+            </div>
+
+            {transaction.category && (
               <div className="flex justify-between">
-                <span className="text-neutral-600">ค่าธรรมเนียม</span>
+                <span className="text-neutral-600">หมวดหมู่</span>
                 <span className="text-neutral-900 font-medium">
-                  ฿{transaction.fee}
+                  {transaction.category === 'food' ? 'อาหาร' :
+                   transaction.category === 'transport' ? 'การเดินทาง' :
+                   transaction.category === 'shopping' ? 'ช้อปปิ้ง' :
+                   transaction.category === 'bills' ? 'ค่าใช้จ่าย' :
+                   transaction.category === 'entertainment' ? 'บันเทิง' :
+                   'อื่นๆ'}
                 </span>
               </div>
             )}
@@ -282,10 +238,10 @@ export default function TransactionDetail() {
                 <span className="text-neutral-600">บัญชีปลายทาง</span>
                 <div className="text-right">
                   <p className="text-neutral-900 font-medium">
-                    {transaction.accountNumber}
+                    {transaction.payTag}
                   </p>
                   <p className="text-sm text-neutral-600">
-                    {transaction.bankName}
+                    PayWise Account
                   </p>
                 </div>
               </div>
@@ -337,7 +293,7 @@ export default function TransactionDetail() {
               </div>
               <div className="flex justify-between">
                 <span>Reference ID:</span>
-                <span className="font-mono">{transaction.referenceId}</span>
+                <span className="font-mono">{transaction.reference}</span>
               </div>
               <div className="flex justify-between">
                 <span>{isOutgoing ? "ผู้รับ:" : "ผู้ส่ง:"}</span>
@@ -355,12 +311,20 @@ export default function TransactionDetail() {
               </div>
               <div className="flex justify-between">
                 <span>วันที่:</span>
-                <span>{transaction.timestamp}</span>
+                <span>{transaction.date}</span>
               </div>
               <div className="border-t border-neutral-200 pt-3 mt-3">
                 <div className="flex justify-between font-semibold">
                   <span>สถานะ:</span>
-                  <span className="text-success">สำเร็จ</span>
+                  <span className={
+                    transaction.status === "completed" ? "text-success" :
+                    transaction.status === "pending" ? "text-warning" :
+                    "text-error"
+                  }>
+                    {transaction.status === "completed" ? "สำเร็จ" :
+                     transaction.status === "pending" ? "รอดำเนินการ" :
+                     "ไม่สำเร็จ"}
+                  </span>
                 </div>
               </div>
             </div>

@@ -2,42 +2,12 @@
 
 import { useState } from "react";
 import { Link } from "react-router";
+import { getRecentTransactions } from "../data/transactions";
 
 export default function Home() {
   const [showBalance, setShowBalance] = useState(true);
 
-  const recentTransactions = [
-    {
-      id: "TXN001",
-      type: "outgoing",
-      recipient: "สมชาย ใจดี",
-      payTag: "@somchai123",
-      amount: 500,
-      memo: "ค่าอาหารเที่ยง",
-      date: "วันนี้ 14:30",
-      status: "completed",
-    },
-    {
-      id: "TXN002",
-      type: "incoming",
-      sender: "นิดา สวยงาม",
-      payTag: "@nida456",
-      amount: 1200,
-      memo: "คืนเงินค่าหนัง",
-      date: "เมื่อวาน 19:45",
-      status: "completed",
-    },
-    {
-      id: "TXN003",
-      type: "outgoing",
-      recipient: "ประยุทธ์ มั่นคง",
-      payTag: "@prayuth789",
-      amount: 2500,
-      memo: "ค่าเช่าบ้าน",
-      date: "2 วันที่แล้ว",
-      status: "completed",
-    },
-  ];
+  const recentTransactions = getRecentTransactions();
 
   return (
     <div className="min-h-screen bg-neutral-50">
