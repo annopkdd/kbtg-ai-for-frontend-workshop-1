@@ -10,4 +10,11 @@ export default defineConfig({
   preview: {
     historyApiFallback: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
